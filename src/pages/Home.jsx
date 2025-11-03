@@ -14,13 +14,67 @@ import { toast } from 'react-toastify';
 
 const Home = () => {
 
+ const Home = () => {
+
   // ✅ Fixed typos in options
   const options = [
-    { value: 'html-css', label: 'HTML + CSS' },
-    { value: 'html-tailwind', label: 'HTML + Tailwind CSS' },
-    { value: 'html-bootstrap', label: 'HTML + Bootstrap' },
-    { value: 'html-css-js', label: 'HTML + CSS + JS' },
-    { value: 'html-tailwind-bootstrap', label: 'HTML + Tailwind + Bootstrap' },
+  // 🔹 Core Web Stacks
+  { value: 'html-css', label: 'HTML + CSS' },
+  { value: 'html-tailwind', label: 'HTML + Tailwind CSS' },
+  { value: 'html-bootstrap', label: 'HTML + Bootstrap' },
+  { value: 'html-css-js', label: 'HTML + CSS + JavaScript' },
+  { value: 'html-tailwind-bootstrap', label: 'HTML + Tailwind + Bootstrap' },
+
+  // ⚛️ React Frameworks
+  { value: 'react-css', label: 'React + CSS' },
+  { value: 'react-tailwind', label: 'React + Tailwind CSS' },
+  { value: 'react-bootstrap', label: 'React + Bootstrap' },
+  { value: 'react-materialui', label: 'React + Material UI' },
+  { value: 'react-chakra', label: 'React + Chakra UI' },
+  { value: 'react-antd', label: 'React + Ant Design' },
+
+  // 💚 Vue.js Frameworks
+  { value: 'vue-css', label: 'Vue + CSS' },
+  { value: 'vue-tailwind', label: 'Vue + Tailwind CSS' },
+  { value: 'vue-bootstrap', label: 'Vue + Bootstrap' },
+  { value: 'vue-quasar', label: 'Vue + Quasar Framework' },
+
+  // ⚡ Next.js Ecosystem
+  { value: 'next-tailwind', label: 'Next.js + Tailwind CSS' },
+  { value: 'next-chakra', label: 'Next.js + Chakra UI' },
+  { value: 'next-materialui', label: 'Next.js + Material UI' },
+
+  // 🅰️ Angular Frameworks
+  { value: 'angular-css', label: 'Angular + CSS' },
+  { value: 'angular-bootstrap', label: 'Angular + Bootstrap' },
+  { value: 'angular-material', label: 'Angular + Material' },
+
+  // 🧱 Other Modern Frameworks
+  { value: 'svelte-tailwind', label: 'Svelte + Tailwind CSS' },
+  { value: 'astro-tailwind', label: 'Astro + Tailwind CSS' },
+  { value: 'solid-tailwind', label: 'SolidJS + Tailwind CSS' },
+
+  // 🧩 UI Libraries
+  { value: 'bootstrap5', label: 'Bootstrap 5' },
+  { value: 'materialize', label: 'Materialize CSS' },
+  { value: 'bulma', label: 'Bulma CSS' },
+  { value: 'foundation', label: 'Foundation CSS' },
+  { value: 'daisyui', label: 'Tailwind + DaisyUI' },
+
+  // 🌈 Experimental / Creative Stacks
+  { value: 'threejs', label: 'Three.js (3D Components)' },
+  { value: 'react-framer', label: 'React + Framer Motion' },
+  { value: 'react-gsap', label: 'React + GSAP Animations' },
+  { value: 'html-canvas', label: 'HTML + Canvas Animations' },
+   // ⚙️ Backend Frameworks
+    { value: 'nodejs', label: 'Node.js' },
+    { value: 'express', label: 'Express.js' },
+    { value: 'django', label: 'Django (Python)' },
+    { value: 'flask', label: 'Flask (Python)' },
+    { value: 'laravel', label: 'Laravel (PHP)' },
+    { value: 'springboot', label: 'Spring Boot (Java)' },
+
+
   ];
 
   const [outputScreen, setOutputScreen] = useState(false);
